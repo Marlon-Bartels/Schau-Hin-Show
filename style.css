@@ -1,0 +1,245 @@
+* {
+    font-size: 32px;
+    padding: 0px;
+    margin: 0px;
+    font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari,
+        'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
+    font-weight: normal;
+    color: rgb(232, 242, 255);
+}
+
+body{
+    /*background-color: rgb(104, 131,139);*/
+    background-color: rgb(43, 58, 68);
+}
+
+.logo {
+    width: 64px;
+}
+
+.header {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    background-color: rgb(46, 46, 46);
+    backdrop-filter: blur(7.5px);
+    margin: 0px;
+    padding: 32px;
+    padding-left: 48px;
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.02),
+        0px 5px 4px rgba(3, 7, 18, 0.05),
+        0px 12px 9px rgba(3, 7, 18, 0.07),
+        0px 20px 15px rgba(3, 7, 18, 0.10),
+        0px 32px 24px rgba(3, 7, 18, 0.12);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    top: 0px;
+    z-index: 999;
+    transition: all 500ms ease-in-out;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.menü-headline {
+    /*border: red solid solid 1px;*/
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.menü {
+    /*border: orange solid 1px;*/
+    display: flex;
+    padding-right: 64px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.menü-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 8px 12px;
+    background-color: rgba(255, 0, 0, 0.35);
+    margin: 8px;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+    background: rgba(66, 66, 66, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    gap: 16px;
+    background: radial-gradient(ellipse,
+            rgba(85, 85, 85, 0.05) 0%,
+            rgba(85, 85, 85, 0) 0%);
+    border-radius: 32px;
+}
+.menü-link:hover {
+    transform: scale(1.2);
+    /* background-color: rgba(199, 199, 199, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2); */
+    /*
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 4px;*/
+    cursor: pointer;
+}
+.menü-link:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Logo als Button zum Index */
+.menü-link-logo {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 8px;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    gap: 32px;
+    margin: 0;
+    display: block;
+}
+.menü-link-logo:hover {
+    cursor: pointer;
+}
+
+.header-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.headline {
+    margin-top: 80px;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    padding: 0 24px;
+    color: rgb(20, 20, 20);
+    text-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+    gap: 64px;
+}
+
+.headline-1 {
+    font-weight: 700;
+    font-size: 80px;
+    letter-spacing: 2px;
+}
+
+.headline-2 {
+    font-weight: 600;
+    font-size: 44px;
+    max-width: 999px;
+}
+
+.episoden-link {
+    color: rgb(43, 58, 68);
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 8px;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+    background: rgba(66, 66, 66, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    gap: 32px;
+    background: rgb(222, 238, 255);
+    border-radius: 4px;
+}
+.episoden-link:hover,
+.idea-link:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+.episoden-link:active,
+.idea-link:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.idea-link {
+    color: rgb(222, 238, 255);
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+    background: rgba(66, 66, 66, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    gap: 32px;
+    background: red;
+    border-radius: 4px;
+    font-size: 64px;
+}
+
+.episode{
+    margin: 32px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.episode-name{
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.about-text{
+    margin: 32px;
+    font-size: 32px;
+}
+.strong2{
+    font-weight: bold;
+    font-size: 40px;
+}
+.strong1{
+    font-weight: bold;
+}
+.team{
+    font-size: 32px;
+    font-weight: 501;
+    text-decoration: underline;
+}
+.team-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin: 64px;
+}
+
+
+.idea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px;
+    gap: 24px;
+}
+.idea-text{
+    margin: 16px;
+}
+.idea-headline{
+    font-size: 48px;
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
