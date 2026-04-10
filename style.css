@@ -5,7 +5,7 @@
     font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari,
         'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
     font-weight: normal;
-    color: white;
+    color: rgb(232, 242, 255);
 }
 
 body{
@@ -47,6 +47,7 @@ body{
     display: flex;
     align-items: center;
     gap: 40px;
+    color: rgb(255, 255, 255);
 }
 
 .menü {
@@ -116,7 +117,7 @@ body{
 }
 
 .headline {
-    margin-top: 128px;
+    margin-top: 80px;
     inset: 0;
     display: flex;
     flex-direction: column;
@@ -143,7 +144,7 @@ body{
 }
 
 .episoden-link {
-    color: rgb(255, 255, 255);
+    color: rgb(43, 58, 68);
     text-decoration: none;
     padding: 8px 12px;
     margin: 8px;
@@ -154,16 +155,33 @@ body{
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     gap: 32px;
-    background: black;
-    border-radius: 8px;
+    background: rgb(222, 238, 255);
+    border-radius: 4px;
 }
-.episoden-link:hover {
+.episoden-link:hover,
+.idea-link:hover {
     transform: scale(1.15);
     cursor: pointer;
 }
-.episoden-link:active {
+.episoden-link:active,
+.idea-link:active {
     transform: scale(0.98);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.idea-link {
+    color: rgb(222, 238, 255);
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: all 0.25s ease-in-out;
+    display: inline-block;
+    background: rgba(66, 66, 66, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    gap: 32px;
+    background: red;
+    border-radius: 4px;
+    font-size: 64px;
 }
 
 .episode{
@@ -177,7 +195,7 @@ body{
 }
 .episode-name{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .about-text{
@@ -217,4 +235,11 @@ body{
 }
 .idea-headline{
     font-size: 48px;
+}
+
+.link-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
 }
