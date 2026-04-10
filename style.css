@@ -201,7 +201,7 @@ body{
     width: 920px;
     max-width: 100%;
     height: auto;
-    border-radius: 12px;
+    border-radius: 6px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
 }
 
@@ -363,6 +363,20 @@ body{
     .idea-link {
         font-size: 28px;
     }
+    .about-text {
+        margin: 16px;
+        font-size: 24px;
+    }
+    .strong2 {
+        font-size: 32px;
+    }
+    .team {
+        font-size: 24px;
+    }
+    .team-container {
+        margin: 32px;
+        gap: 12px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -396,6 +410,20 @@ body{
         font-size: 24px;
         padding: 8px 12px;
     }
+    .about-text {
+        margin: 12px;
+        font-size: 20px;
+    }
+    .strong2 {
+        font-size: 24px;
+    }
+    .team {
+        font-size: 20px;
+    }
+    .team-container {
+        margin: 24px;
+        gap: 10px;
+    }
 }
 
 @media (max-width: 380px) {
@@ -418,5 +446,19 @@ body{
     .episoden-link,
     .idea-link {
         font-size: 20px;
+    }
+    .about-text {
+        margin: 8px;
+        font-size: 18px;
+    }
+    .strong2 {
+        font-size: 22px;
+    }
+    .team {
+        font-size: 18px;
+    }
+    .team-container {
+        margin: 16px;
+        gap: 8px;
     }
 }
