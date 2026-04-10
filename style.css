@@ -5,6 +5,12 @@
     font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand, Comfortaa, Manjari,
         'Arial Rounded MT', 'Arial Rounded MT Bold', Calibri, source-sans-pro, sans-serif;
     font-weight: normal;
+    color: white;
+}
+
+body{
+    /*background-color: rgb(104, 131,139);*/
+    background-color: rgb(43, 58, 68);
 }
 
 .logo {
@@ -171,7 +177,7 @@
 }
 .episode-name{
     font-weight: bold;
-    font-size: 40px;
+    font-size: 24px;
 }
 
 .about-text{
@@ -196,4 +202,19 @@
     align-items: center;
     gap: 16px;
     margin: 64px;
+}
+
+
+.idea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 64px;
+}
+.idea-text{
+    border: red solid 1px;
+    margin: 16px;
+}
+.idea-headline{
+    font-size: 48px;
 }
