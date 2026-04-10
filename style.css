@@ -197,6 +197,13 @@ body{
     font-weight: bold;
     font-size: 32px;
 }
+.episode-video{
+    width: 920px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
 
 .about-text{
     margin: 32px;
@@ -247,4 +254,169 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 32px;
+}
+
+/* ===========================
+   Responsive Layout
+   =========================== */
+@media (max-width: 1200px) {
+    .header {
+        padding: 24px 32px;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+    .menü-headline {
+        font-size: 40px;
+        gap: 24px;
+    }
+    .menü {
+        padding-right: 0;
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .menü-link {
+        padding: 8px 14px;
+    }
+    .headline-1 {
+        font-size: 64px;
+    }
+    .headline-2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 900px) {
+    .header {
+        padding: 20px 24px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+    }
+    .logo {
+        width: 52px;
+    }
+    .menü-headline {
+        font-size: 32px;
+        gap: 16px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .menü {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    .menü-link {
+        margin: 6px;
+        font-size: 24px;
+    }
+    .headline {
+        margin-top: 56px;
+        gap: 40px;
+    }
+    .headline-1 {
+        font-size: 48px;
+    }
+    .headline-2 {
+        font-size: 28px;
+        max-width: 760px;
+    }
+    .idea-link {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 16px 18px;
+    }
+    .menü-headline {
+        font-size: 26px;
+        gap: 12px;
+    }
+    .menü {
+        width: 100%;
+        justify-content: flex-start;
+        gap: 6px;
+    }
+    .menü-link {
+        padding: 6px 10px;
+        font-size: 20px;
+        border-radius: 24px;
+    }
+    .headline {
+        margin-top: 40px;
+        padding: 0 16px;
+        gap: 28px;
+    }
+    .headline-1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+    }
+    .headline-2 {
+        font-size: 22px;
+    }
+    .episoden-link,
+    .idea-link {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header {
+        padding: 14px 14px;
+    }
+    .logo {
+        width: 44px;
+    }
+    .menü-headline {
+        font-size: 22px;
+        gap: 10px;
+    }
+    .menü {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .menü-link {
+        font-size: 18px;
+        padding: 6px 10px;
+        margin: 4px;
+    }
+    .headline-1 {
+        font-size: 28px;
+    }
+    .headline-2 {
+        font-size: 20px;
+    }
+    .episoden-link,
+    .idea-link {
+        font-size: 24px;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 380px) {
+    .header {
+        padding: 12px 10px;
+    }
+    .menü-headline {
+        font-size: 20px;
+    }
+    .menü-link {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+    .headline-1 {
+        font-size: 24px;
+    }
+    .headline-2 {
+        font-size: 18px;
+    }
+    .episoden-link,
+    .idea-link {
+        font-size: 20px;
+    }
 }
